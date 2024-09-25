@@ -1,0 +1,24 @@
+<?="<?php\n"?>
+
+declare(strict_types=1);
+
+namespace <?=$namespace?>;
+
+use <?=$repository_full_name?>;
+use Doctrine\DBAL\Types\Types;
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\UniqueConstraint;
+
+#[ORM\Entity(repositoryClass: <?=$repository_short_name?>::class)]
+#[ORM\Table(name: '<?=$table_name?>')]
+final class <?=$class_name . "\n"?>
+{
+    #[ORM\Id]
+    #[ORM\Column(name: 'BDSRecordId', type: Types::STRING, length: 48)]
+    private ?string $bdsRecordId = null;
+
+    public function getBDSRecordId(): ?string
+    {
+        return $this->bdsRecordId;
+    }
+}

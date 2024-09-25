@@ -1,0 +1,109 @@
+{
+  "name": "mjfk23/brightspace-bds-schema",
+  "description": "",
+  "type": "project",
+  "keywords": [],
+  "homepage": "https://github.com/mjfk23/brightspace-bds-schema",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Melody Kimball",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-ctype": "*",
+    "ext-iconv": "*",
+    "doctrine/dbal": "dev-mjfk23-3.9.x",
+    "doctrine/doctrine-bundle": "^2.12",
+    "doctrine/doctrine-migrations-bundle": "^3.3",
+    "doctrine/orm": "^3.2",
+    "mjfk23/gadget-console": "^1.0",
+    "mjfk23/gadget-http": "^1.0",
+    "symfony/dotenv": "6.4.*",
+    "symfony/flex": "^2",
+    "symfony/framework-bundle": "6.4.*",
+    "symfony/maker-bundle": "dev-mjfk23",
+    "symfony/monolog-bundle": "^3.10",
+    "symfony/runtime": "6.4.*",
+    "symfony/yaml": "6.4.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.12",
+    "phpstan/phpstan-strict-rules": "^1.6",
+    "phpstan/extension-installer": "^1.4",
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^3.10",
+    "vimeo/psalm": "^5.26"
+  },
+  "autoload": {
+    "psr-4": {
+      "Brightspace\\Bds\\Schema\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Brightspace\\Bds\\Schema\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true,
+      "phpstan/extension-installer": true,
+      "symfony/flex": true,
+      "symfony/runtime": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "apcu-autoloader": true
+  },
+  "replace": {
+    "symfony/polyfill-ctype": "*",
+    "symfony/polyfill-iconv": "*",
+    "symfony/polyfill-php72": "*",
+    "symfony/polyfill-php73": "*",
+    "symfony/polyfill-php74": "*",
+    "symfony/polyfill-php80": "*",
+    "symfony/polyfill-php81": "*"
+  },
+  "scripts": {
+    "auto-scripts": {
+      "cache:clear": "symfony-cmd",
+      "assets:install %PUBLIC_DIR%": "symfony-cmd"
+    },
+    "post-install-cmd": [
+      "@auto-scripts"
+    ],
+    "post-update-cmd": [
+      "@auto-scripts"
+    ],
+    "phpcs": "vendor/bin/phpcs",
+    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon",
+    "psalm": "vendor/bin/psalm --no-cache",
+    "phpunit": "vendor/bin/phpunit"
+  },
+  "conflict": {
+    "symfony/symfony": "*"
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": true,
+      "require": "6.4.*",
+      "endpoint": [
+        "https://raw.githubusercontent.com/mjfk23/symfony-recipes/main/index.json",
+        "flex://defaults"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mjfk23/symfony-maker-bundle"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/mjfk23/doctrine-dbal"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+    "Accommodations": {
+        "name": "Accommodations",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4752-accommodations-data-sets",
+        "datasets": [
+            "Accommodations Profile Log"
+        ]
+    },
+    "Activity Feed": {
+        "name": "Activity Feed",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4712-activity-feed-data-sets",
+        "datasets": [
+            "Activity Feed Comment Log",
+            "Activity Feed Comment Objects",
+            "Activity Feed Post Log",
+            "Activity Feed Post Objects"
+        ]
+    },
+    "Announcements": {
+        "name": "Announcements",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4723-announcements-data-sets",
+        "datasets": [
+            "Announcements"
+        ]
+    },
+    "Assignments": {
+        "name": "Assignments",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4767-assignments-data-sets",
+        "datasets": [
+            "Assignment Special Access",
+            "Assignment Submission Details",
+            "Assignment Submissions",
+            "Assignment Summary",
+            "TurnItIn Submissions"
+        ]
+    },
+    "Attendance": {
+        "name": "Attendance",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4519-attendance-data-sets",
+        "datasets": [
+            "Attendance Registers",
+            "Attendance Schemes",
+            "Attendance Sessions",
+            "Attendance User Sessions"
+        ]
+    },
+    "Awards": {
+        "name": "Awards",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4520-awards-data-sets",
+        "datasets": [
+            "Award Objects",
+            "Awards Issued",
+            "Course Awards"
+        ]
+    },
+    "Calendar": {
+        "name": "Calendar",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4521-calendar-data-sets",
+        "datasets": [
+            "Calendar Events"
+        ]
+    },
+    "Checklist": {
+        "name": "Checklist",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4523-checklist-data-sets",
+        "datasets": [
+            "Checklist Category Details",
+            "Checklist Completions",
+            "Checklist Item Details",
+            "Checklist Objects"
+        ]
+    },
+    "Competency": {
+        "name": "Competency",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4754-competency-data-sets",
+        "datasets": [
+            "Competency Activities",
+            "Competency Activity Log",
+            "Competency Activity Results",
+            "Competency Log",
+            "Competency Objects",
+            "Competency Structure"
+        ]
+    },
+    "Content": {
+        "name": "Content",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4713-content-data-sets",
+        "datasets": [
+            "Content Files Properties Log",
+            "Content Objects",
+            "Content User Completion",
+            "Content User Progress"
+        ]
+    },
+    "Content Service": {
+        "name": "Content Service",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/22812-content-service-data-sets",
+        "datasets": [
+            "Audio Video Processed",
+            "Media Consumption Log",
+            "Media Objects"
+        ]
+    },
+    "Continuous Professional Development (CPD)": {
+        "name": "Continuous Professional Development (CPD)",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/26020-continuous-professional-development-cpd-data-sets",
+        "datasets": [
+            "CPD Job Targets",
+            "CPD Methods",
+            "CPD Question Answers",
+            "CPD Questions",
+            "CPD Subjects",
+            "CPD User Records",
+            "CPD User Targets"
+        ]
+    },
+    "Course Copy": {
+        "name": "Course Copy",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4725-course-copy-data-sets",
+        "datasets": [
+            "Course Copy Logs"
+        ]
+    },
+    "Course Publisher": {
+        "name": "Course Publisher",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4524-course-publisher-data-sets",
+        "datasets": [
+            "Course Publisher Launches",
+            "Course Publisher Recipients"
+        ]
+    },
+    "Creator+": {
+        "name": "Creator+",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/26161-creator-data-sets",
+        "datasets": [
+            "Creator+ Practices Adoption",
+            "Creator+ Practices Engagement"
+        ]
+    },
+    "Discussions": {
+        "name": "Discussions",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4525-discussions-data-sets",
+        "datasets": [
+            "Discussion Forums",
+            "Discussion Posts",
+            "Discussion Posts Read Status",
+            "Discussion Topics",
+            "Discussion Topic User Scores"
+        ]
+    },
+    "Exemptions": {
+        "name": "Exemptions",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4526-exemptions-data-sets",
+        "datasets": [
+            "Activity Exemptions Log"
+        ]
+    },
+    "Grades": {
+        "name": "Grades",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4527-grades-data-sets",
+        "datasets": [
+            "Grade Book Settings",
+            "Grade Objects",
+            "Grade Objects Log",
+            "Grade Results",
+            "Grade Schemes",
+            "Grade Scheme Ranges"
+        ]
+    },
+    "Intelligent Agents": {
+        "name": "Intelligent Agents",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4528-intelligent-agents-data-sets",
+        "datasets": [
+            "Intelligent Agent Objects",
+            "Intelligent Agent Run Log",
+            "Intelligent Agent Run Users"
+        ]
+    },
+    "JIT Provisioning": {
+        "name": "JIT Provisioning",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/5782-jit-provisioning-data-sets",
+        "datasets": [
+            "JIT Provisioned Users Log"
+        ]
+    },
+    "LTI": {
+        "name": "LTI",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4727-lti-data-sets",
+        "datasets": [
+            "LTI Advantage Deployment Audit",
+            "LTI Advantage Registration Audit",
+            "LTI Launches",
+            "LTI Link Migration Audit",
+            "LTI Links"
+        ]
+    },
+    "Local Authentication": {
+        "name": "Local Authentication",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4714-local-authentication-data-sets",
+        "datasets": [
+            "Local Authentication Security Log"
+        ]
+    },
+    "Organizational Units": {
+        "name": "Organizational Units",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4529-organizational-units-data-sets",
+        "datasets": [
+            "Organizational Units",
+            "Organizational Unit Ancestors",
+            "Organizational Unit Descendants",
+            "Organizational Unit Parents",
+            "Organizational Unit Recent Access"
+        ]
+    },
+    "Outcomes": {
+        "name": "Outcomes",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4796-outcomes-data-sets",
+        "datasets": [
+            "Outcome Details",
+            "Outcomes Aligned to Tool Objects",
+            "Outcomes Assessed Checkpoints",
+            "Outcomes Course Specific Scales",
+            "Outcomes Demonstrations",
+            "Outcomes in Registries",
+            "Outcomes Program Details",
+            "Outcomes Registry Owners",
+            "Outcomes Rubric Alignments",
+            "Outcomes Scale Definition",
+            "Outcomes Scale Level Definition"
+        ]
+    },
+    "Portfolio": {
+        "name": "Portfolio",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4530-portfolio-data-sets",
+        "datasets": [
+            "Portfolio Categories",
+            "Portfolio Evidence Categories",
+            "Portfolio Evidence Log",
+            "Portfolio Evidence Objects"
+        ]
+    },
+    "Questions": {
+        "name": "Questions",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4531-questions-data-sets",
+        "datasets": [
+            "Question Library",
+            "Question Relationships"
+        ]
+    },
+    "Quizzes": {
+        "name": "Quizzes",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4532-quizzes-data-sets",
+        "datasets": [
+            "Quiz Attempts",
+            "Quiz Attempts Log",
+            "Quiz Objects",
+            "Quiz Question Answer Options",
+            "Quiz Question Answers",
+            "Quiz Survey Sections",
+            "Quiz User Answer Responses",
+            "Quiz User Answers"
+        ]
+    },
+    "Release Conditions": {
+        "name": "Release Conditions",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4533-release-conditions-data-sets",
+        "datasets": [
+            "PreRequisite Conditions Met",
+            "Release Condition Objects",
+            "Release Condition Results"
+        ]
+    },
+    "Role Details": {
+        "name": "Role Details",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4534-role-details-data-sets",
+        "datasets": [
+            "Role Details"
+        ]
+    },
+    "Rubrics": {
+        "name": "Rubrics",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4535-rubrics-data-sets",
+        "datasets": [
+            "Rubric Assessment",
+            "Rubric Assessment Criteria",
+            "Rubric Criteria Levels",
+            "Rubric Objects",
+            "Rubric Object Criteria",
+            "Rubric Object Levels",
+            "Rubrics Edit"
+        ]
+    },
+    "SCORM": {
+        "name": "SCORM",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4536-scorm-data-sets",
+        "datasets": [
+            "SCORM Activities",
+            "SCORM Activity Attempts",
+            "SCORM Interaction Attempts",
+            "SCORM Interaction Objectives",
+            "SCORM Interactions",
+            "SCORM Objective Attempts",
+            "SCORM Objectives",
+            "SCORM Objects",
+            "SCORM Visits"
+        ]
+    },
+    "SIS Course Merge": {
+        "name": "SIS Course Merge",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/19147-sis-course-merge-data-sets",
+        "datasets": [
+            "SIS Course Merge Log"
+        ]
+    },
+    "Sessions and System Access": {
+        "name": "Sessions and System Access",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4537-sessions-and-system-access-data-sets",
+        "datasets": [
+            "Session History",
+            "System Access Log"
+        ]
+    },
+    "Surveys": {
+        "name": "Surveys",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4538-surveys-data-sets",
+        "datasets": [
+            "Quiz Survey Sections",
+            "Survey Attempts",
+            "Survey Objects",
+            "Survey Question Answers",
+            "Survey User Answer Responses",
+            "Survey User Answers"
+        ]
+    },
+    "Tools": {
+        "name": "Tools",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4540-tools-data-sets",
+        "datasets": [
+            "Tools"
+        ]
+    },
+    "Users": {
+        "name": "Users",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4740-users-data-sets",
+        "datasets": [
+            "Auditor Relationships Log",
+            "Course Access",
+            "Course Access Log",
+            "Enrollments and Withdrawals",
+            "User Attribute Definitions",
+            "User Attribute Values",
+            "User Enrollments",
+            "User Logins",
+            "Users"
+        ]
+    },
+    "Virtual Classroom": {
+        "name": "Virtual Classroom",
+        "url": "https:\/\/community.d2l.com\/brightspace\/kb\/articles\/4541-virtual-classroom-data-sets",
+        "datasets": [
+            "Virtual Classroom Usage"
+        ]
+    }
+}
