@@ -30,8 +30,11 @@ final class ModuleLoader
         }
 
         $contents = $response->getBody()->getContents();
-        return strlen($contents) > 0
-            ? $contents
-            : throw new \RuntimeException();
+        if (strlen($contents) < 1) {
+            throw new \RuntimeException();
+        }
+
+        /** @var non-empty-string $contents */
+        return $contents;
     }
 }

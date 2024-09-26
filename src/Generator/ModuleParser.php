@@ -89,7 +89,8 @@ final class ModuleParser
                     break;
                 case 'table':
                     if (is_array($current) && count(DOM::findChildrenByName($item, 'thead')) > 0) {
-                        $datasetNodes[] = [...$current, 'table' => $item];
+                        $current['table'] = $item;
+                        $datasetNodes[] = $current;
                         $current = null;
                     }
                     break;
@@ -187,10 +188,12 @@ final class ModuleParser
         );
 
         foreach ($tableRows as $tableRow) {
+            /** @var array<string,string> $tableRowValues */
             $tableRowValues = [];
 
             $tableCells = DOM::findChildrenByName($tableRow, 'td');
 
+            /** @var array<int,string> $columnMap */
             $columnMap = match (count($tableCells)) {
                 6 => self::BDS_COLUMN_MAP,
                 default => throw new \RuntimeException("Invalid dataset type")
@@ -198,7 +201,7 @@ final class ModuleParser
 
             foreach ($tableCells as $idx => $tableCell) {
                 $p = DOM::findChildrenByName($tableCell, 'p');
-                $tableRowValues[$columnMap[$idx]] = implode(" ", array_filter(
+                $tableRowValues[$columnMap[(int) $idx]] = implode(" ", array_filter(
                     array_map(
                         fn(\DOMNode $n) => DOM::cleanNodeValue($n),
                         (count($p) > 0) ? $p : [$tableCell]

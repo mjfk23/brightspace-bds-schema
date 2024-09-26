@@ -170,6 +170,10 @@ final class EntityGenerator
      */
     private function createClassProperty(DatasetColumn $column): ClassProperty
     {
+        /**
+         * @var string|null $precision
+         * @var string|null $scale
+         */
         list($precision, $scale) = match ($column->type) {
             DatasetColumnType::BIGINT => ['20', null],
             DatasetColumnType::INT => ['10', null],

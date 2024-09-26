@@ -12,7 +12,7 @@ use Gadget\Store\JSONFileObjectStore;
 final class DatasetRepository extends JSONFileObjectStore
 {
     /** @var array<string,string> $moduleNameIndex */
-    private array $moduleNameIndex;
+    private array $moduleNameIndex = [];
 
 
     /**

@@ -9,7 +9,9 @@ use Brightspace\Bds\Schema\Entity\Dataset;
 use Brightspace\Bds\Schema\Repository\DatasetModuleRepository;
 use Brightspace\Bds\Schema\Repository\DatasetRepository;
 use Gadget\Io\Cast;
+use Gadget\Io\Exception\CastException;
 use Gadget\Io\File;
+use RuntimeException;
 
 final class SchemaGenerator
 {
@@ -32,13 +34,16 @@ final class SchemaGenerator
     }
 
 
-    /** @inheritdoc */
+    /**
+     * @param (callable(string|iterable<string> $messages): mixed)|null $writeln
+     * @return SchemaGenerator
+     */
     public function generateDatasets(callable|null $writeln = null): self
     {
         $this->moduleRepository->load();
         $this->datasetRepository->load();
 
-        $writeln ??= fn () => 0;
+        $writeln ??= fn (string|iterable $message): mixed => 0;
         $available = [];
 
         foreach ($this->moduleRepository as $module) {
@@ -109,7 +114,10 @@ final class SchemaGenerator
     }
 
 
-    /** @inheritdoc */
+    /**
+     * @param (callable(string|iterable<string> $messages): mixed)|null $writeln
+     * @return SchemaGenerator
+     */
     public function generateEntities(callable|null $writeln = null): self
     {
         array_map(unlink(...), File::glob([
@@ -119,7 +127,7 @@ final class SchemaGenerator
 
         $this->datasetRepository->load();
 
-        $writeln ??= fn () => 0;
+        $writeln ??= fn (string|iterable $message): mixed => 0;
         foreach ($this->datasetRepository as $dataset) {
             $writeln($dataset->name);
             list($entityClass, $repoClass) = $this->entityGenerator->generateEntity($dataset);
