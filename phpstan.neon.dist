@@ -3,3 +3,6 @@ parameters:
         paths:
                 - src
                 - tests
+        excludePaths:
+                - src/Generator/Entity
+                - src/Generator/Repository

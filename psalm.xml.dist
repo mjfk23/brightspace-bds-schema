@@ -13,6 +13,21 @@
         <directory name="tests" />
         <ignoreFiles>
             <directory name="vendor" />
+            <directory name="src/Generator/Entity" />
+            <directory name="src/Generator/Repository" />
         </ignoreFiles>
     </projectFiles>
+
+    <issueHandlers>
+        <InternalMethod>
+            <errorLevel type="suppress">
+                <directory name="src/Generator" />
+            </errorLevel>
+        </InternalMethod>
+        <InternalClass>
+            <errorLevel type="suppress">
+                <directory name="src/Generator" />
+            </errorLevel>
+        </InternalClass>
+    </issueHandlers>
 </psalm>
